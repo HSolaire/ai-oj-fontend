@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px, 方便rem布局 */
+}
+
 a {
   font-weight: 500;
   color: #646cff;

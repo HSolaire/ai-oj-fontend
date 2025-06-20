@@ -12,17 +12,12 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Home',
         component: () => import('@/views/auth/Auth.vue'),
         meta: { title: '首页' }
-      }, {
-        path: '/auth',
-        name: 'Auth',
-        component: () => import('@/views/auth/Auth.vue'),
-        meta: { title: '用户认证' }
       },
       {
         path: '/problems',
         name: 'Problems',
         component: () => import('@/views/problem/ProblemList.vue'),
-        meta: { title: '题目练习' }
+        meta: { title: '题库' }
       },
       {
         path: '/contests',
@@ -40,7 +35,7 @@ const routes: Array<RouteRecordRaw> = [
         path: '/community',
         name: 'Community',
         component: () => import('@/views/community/Community.vue'),
-        meta: { title: '社区讨论' }
+        meta: { title: '社区' }
       },
       {
         path: '/admin',
