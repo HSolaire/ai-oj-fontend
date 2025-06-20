@@ -58,7 +58,7 @@
     class="admin-card"
     borderd
   >
-    <a-row>
+    <a-row style="margin-bottom: 1rem">
       <a-button
         type="primary"
         @click="goAdd"
@@ -226,7 +226,7 @@
   const columns = [
     { title: '序号', dataIndex: 'index', key: 'index', width: 70 },
     { title: '标题', dataIndex: 'title', key: 'title' },
-    { title: '标签', dataIndex: 'tags', key: 'tags' },
+    { title: '标签', dataIndex: 'tags', key: 'tags', width: 300 },
     { title: '难度', dataIndex: 'difficulty', key: 'difficulty', width: 90 },
     { title: '创建时间', dataIndex: 'createdAt', key: 'createdAt', width: 120 },
     { title: '创建者', dataIndex: 'creator', key: 'creator', width: 100 },
@@ -292,5 +292,8 @@
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     background: #fff;
+  }
+  :deep(.ant-table-thead > tr > th) {
+    text-align: center !important;
   }
 </style>

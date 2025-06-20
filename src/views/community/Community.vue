@@ -1,5 +1,7 @@
 <template>
-  <div>社区讨论与题解分享页面</div>
+  <div class="p-4 bg-blue-100 text-blue-800 rounded">
+    Hello Tailwind!
+  </div>
 </template>
 <script setup>
 // ...
