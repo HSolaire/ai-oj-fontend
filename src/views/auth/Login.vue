@@ -1,6 +1,10 @@
 <template>
   <div class="login-container">
-    <a-card title="用户登录" class="login-card">
+    <a-card class="login-card">
+      <template #title>
+        <div style="text-align: center;">OJ 用户登录</div>
+      </template>
+
       <a-form @submit.prevent="onSubmit" layout="vertical">
         <a-form-item label="用户名">
           <a-input v-model:value="username" placeholder="请输入用户名" />
@@ -42,10 +46,15 @@ async function onSubmit() {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f0f2f5;
+  background-image: url('https://images.unsplash.com/photo-1554147090-e1221a04a025?auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
 }
 .login-card {
-  width: 350px;
-  box-shadow: 0 2px 8px #f0f1f2;
+  width: 380px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
 }
 </style> 

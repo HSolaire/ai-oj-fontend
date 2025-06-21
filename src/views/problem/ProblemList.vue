@@ -91,6 +91,7 @@
           <template #renderItem="{ item, index }">
             <a-list-item
               :class="{ 'zebra-row': index % 2 === 1, 'problem-list-item': true }"
+              class="rounded-lg"
               @click="goToProblem(item.id)"
             >
               <a-row class="problem-item-row">
@@ -151,10 +152,13 @@
         <div style="text-align: center; font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem">
           本月做题日历
         </div>
-        <a-calendar
+        <div>
+ <a-calendar
           :fullscreen="false"
           :date-cell-render="dateCellRender"
         />
+        </div>
+       
       </a-card>
     </a-col>
   </a-row>
